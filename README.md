@@ -110,4 +110,4 @@ model.compile(BinaryCrossEntropyLoss, DataLoaderWithPreprocess,
 Try ``python demo.py`` to train a model to classify between two multivariate normal distribution.
 
 ### Experiment Failed
-*This script failed the **hello world deep learning** problem - MNIST Classification*. Script Invluded
+*This script failed the **hello world deep learning** problem - MNIST Classification*. Script Included
