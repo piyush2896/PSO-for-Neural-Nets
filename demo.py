@@ -1,4 +1,4 @@
-from nn import sigmoid
+from nn import sigmoid, tanh
 from nn.model import Model
 from nn.layers import Layer
 from nn.losses import BinaryCrossEntropyLoss
@@ -38,9 +38,9 @@ def accuracy(y, y_hat):
     return np.mean(y_hat[:, 0] == y)
 
 model = Model()
-model.add_layer(Layer(2, 10, np.tanh))
-model.add_layer(Layer(10, 10, np.tanh))
-model.add_layer(Layer(10, 10, np.tanh))
+model.add_layer(Layer(2, 10, tanh))
+model.add_layer(Layer(10, 10, tanh))
+model.add_layer(Layer(10, 10, tanh))
 model.add_layer(Layer(10, 1, sigmoid))
 
 model.compile(BinaryCrossEntropyLoss, DataLoader, accuracy, batches_per_epoch=30, n_workers=10)

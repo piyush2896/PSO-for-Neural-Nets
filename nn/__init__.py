@@ -14,3 +14,6 @@ def sigmoid(x):
 def softmax(x):
     e_x = np.exp(x - np.max(x))
     return e_x / e_x.sum()
+
+def tanh(x):
+    return np.tanh(x)
