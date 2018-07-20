@@ -24,7 +24,7 @@ particle is placed in the n-dimensional solution space to get to the optimum sol
 | *Source: [Wikipedia](https://en.wikipedia.org/wiki/Particle_swarm_optimization)*|
 
 ### Feedforward Neural Network
-A Feedforward NN is a stack of two operations (a linear operation followed by a non-linear one) applied multiple times to find mapping from some <img src="/images/XtoY.png" height=42 width=42>.
+A Feedforward NN is a stack of two operations (a linear operation followed by a non-linear one) applied multiple times to find mapping from some <img src="/images/XtoY.png" height=28 width=28>.
 
 | ![Feedforward NN operation](/images/nn_operation.png)|
 | :---------------------------------------------------:|
@@ -38,7 +38,7 @@ Here,<br/>
 *b*: is the bias (like intercept *c* in the equation of a line).
 
 ### How to combine the two?
-Suppose our NN have 3 layers with each having a weight matrix <img src="/images/layeri_w.png" height=42 width=42> and a bias vector <img src="/images/layeri_b.png" height=42 width=42> with dimension equal to the number of outputs of the layer.
+Suppose our NN have 3 layers with each having a weight matrix <img src="/images/layeri_w.png" height=28 width=28> and a bias vector <img src="/images/layeri_b.png" height=28 width=28> with dimension equal to the number of outputs of the layer.
 
 *Let's flatten all the weights and biases and concatenate them into a big long vector representing a particle in the n-dimensional solution space. Where solution is the combination of weights and biases that gives the least possible error given the architecture of the network.*
 
